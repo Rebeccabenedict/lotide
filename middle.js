@@ -1,21 +1,7 @@
-const assertArraysEqual = function (array1, array2) {
-  if (eqArrays(array1, array2) === true) {
-    console.log(`✅✅✅ Assertion Passed: ${array1} === ${array2}`);
-  } else {
-    console.log(`❌❌❌ Assertion Failed: ${array1} !== ${array2}`);
-  }
-};
-
-const eqArrays = function(array1, array2) {
-  for (let x = 0; x < array1.length; x++) {
-    if(array1[x] === array2[x]) {
-      return true;
-    }
-    else {
-      return false;
-    }
-  }
-};
+/* The reason why the function below is used is because we want it to return the midpoint of an array. 
+Essentially, if there are an odd amount of items in an array, the function will return one item from the midpoint. 
+However, if there is an even amount of items in an array, it will return two items from the midpoint.
+*/
 
 const middle = function (list) {
   emptyArray = [];
@@ -29,9 +15,6 @@ const middle = function (list) {
       return Math.round(list.length/2);
   }
   
-}
-console.log(middle([1, 2, 3])) // => [2]
-console.log(middle([1, 2, 3, 4, 5]))
-console.log(middle([1])) 
-console.log(middle([1, 2]))
-console.log(middle([1,2,3,4]));
+}; 
+
+module.exports = middle;
