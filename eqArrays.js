@@ -1,10 +1,6 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`❌❌❌ Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+/* The reason why the function below is used is because we want it to establish the equality of both arrays. Essentially, if both arrays
+ are equal, we want the function to return true. If both arrays are not equal, we want the function to return false.
+*/
 
 const eqArrays = function(array1, array2) {
   for (let x = 0; x < array1.length; x++) {
@@ -17,8 +13,4 @@ const eqArrays = function(array1, array2) {
   }
 };
 
-console.log(eqArrays([1, 2, 3], [1, 2, 3]));
-console.log(eqArrays([1, 2, 3], [3, 2, 1]));
-console.log(eqArrays(["1", "2", "3"], ["1", "2", "3"]));
-console.log(eqArrays(["1", "2", "3"], ["1", "2", 3]))
-console.log(assertEqual(eqArrays([5, 4, 3, 2, 1], [3, 2, 1, 5, 4]), false));
+module.exports = eqArrays;
