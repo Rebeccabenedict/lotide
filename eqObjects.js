@@ -1,14 +1,8 @@
-const eqArrays = function(array1, array2) {
-  for (let x = 0; x < array1.length; x++) {
-    if(array1[x] === array2[x]) {
-      return true;
-    }
-    else {
-      return false;
-    }
-  }
-};
+/* The reason why the function below is used is because we want it to establish the equality of both objects. Essentially, if both objects
+ are equal, we want the function to return true. If both objects are not equal, we want the function to return false.
+*/
 
+const eqArrays = require('./eqArrays');
 const eqObjects = function (object1, object2) {
   emptyArray = Object.keys(object1);
   secondEmptyArray = Object.keys(object2);
@@ -29,7 +23,14 @@ const eqObjects = function (object1, object2) {
     return true;
   }
 };
-  
+
+/*
 const shirtObject = { color: "red", size: "medium" };
 const anotherShirtObject= { size: "medium", color: "red" };
-console.log(eqObjects(shirtObject , anotherShirtObject)); //
+eqObjects(shirtObject , anotherShirtObject); // => true
+
+const longSleeveShirtObject= { size: "medium", color: "red", sleeveLength: "long" };
+eqObjects(shirtObject , longSleeveShirtObject); // => false
+*/
+
+module.exports = eqObjects;
