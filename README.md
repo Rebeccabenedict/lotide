@@ -101,7 +101,7 @@ Parameters:
 Returns:  Prints the first item in an array
 
 * `index`:\
-Description: All functions are listed.\
+Description: All functions are listed.
 
 * `letterPositions(phrase)`:\
 Description: Within a string in which a letter is present, all incidenences are returned.\
@@ -117,13 +117,13 @@ Parameters:
 Returns: Prints ammended array with updated results
 
 * `middle(list)`:\
-Description: Middle element of the array is returned.\ 
+Description: Middle element of the array is returned.\
 Parameters:
     - `list` (Array): Primary array\
 Returns: Prints the middle item in an array
 
 * `tail(elements)`:\
-Description: Every element of the array is returned, except for the first element.\ 
+Description: Every element of the array is returned, except for the first element.\
 Parameters:
     - `elements` (Array): Primary array\
 Returns: Prints every element except for the first element
