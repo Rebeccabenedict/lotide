@@ -1,3 +1,7 @@
+/* The reason why the function below is used is because we want it to take each letter in a phrase and return the index of every
+ letter from the phrase.
+*/
+
 const letterPositions = function(phrase) {
   const outcome = {};
   for (let i of phrase) {
@@ -13,4 +17,4 @@ const letterPositions = function(phrase) {
   return outcome;
 };
 
-console.log(letterPositions("hello there"));
+module.exports = letterPositions;
