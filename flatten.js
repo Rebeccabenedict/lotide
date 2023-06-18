@@ -1,21 +1,4 @@
-const assertArraysEqual = function (array1, array2) {
-  if (eqArrays(array1, array2) === true) {
-    console.log(`✅✅✅ Assertion Passed: ${array1} === ${array2}`);
-  } else {
-    console.log(`❌❌❌ Assertion Failed: ${array1} !== ${array2}`);
-  }
-};
-
-const eqArrays = function(array1, array2) {
-  for (let x = 0; x < array1.length; x++) {
-    if(array1[x] === array2[x]) {
-      return true;
-    }
-    else {
-      return false;
-    }
-  }
-};
+// The reason why the function below is used is because we want it to flatten multiple arrays into a single array.
 
 const flatten = function(list) {
   const nArray = [];
@@ -32,4 +15,5 @@ const flatten = function(list) {
   }
   return nArray;
 };
-console.log(flatten([1, 2, [3, 4], 5, [6]]));
+
+module.exports = flatten;
