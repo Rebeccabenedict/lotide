@@ -27,11 +27,11 @@ This project was created and published by me as part of my learnings at Lighthou
 The following functions are currently implemented:
 
 * `assertArraysEqual(array1, array2)`: 
-Description: Asserts true if the two arrays are equal. Otherwise, it returns false.
-Parameters: 
+/n Description: Asserts true if the two arrays are equal. Otherwise, it returns false.
+/n Parameters:  
     - `array1` (Array): First array
     - `array2` (Array): Second array
-Returns: Prints either assertion passed or assertion failed
+/n Returns: Prints either assertion passed or assertion failed
 
 * `assertEqual(actual, expected)`: 
 Description: Asserts true if the two values are equal. Otherwise, it returns false.
