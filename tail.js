@@ -1,18 +1,7 @@
-// Function Implementation
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`❌❌❌ Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+// The reason why the function below is used is because we want it to return each item excluding the first item in an array.
 
 const tail = function(elements) {
   return elements.slice[0];
 };
 
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words);
-assertEqual(words.length, 3);
-assertEqual(([1]));
-assertEqual(([]));
+module.exports = tail;
