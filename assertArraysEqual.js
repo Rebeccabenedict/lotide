@@ -1,14 +1,9 @@
-const eqArrays = function(array1, array2) {
-  for (let x = 0; x < array1.length; x++) {
-    if(array1[x] === array2[x]) {
-      return true;
-    }
-    else {
-      return false;
-    }
-  }
-};
+/* The reason why the function below is used is because we want to use the equality of both arrays in order to establish if the assertion passes or fails. 
+The function will return '✅✅✅ Assertion Passed:' if both arrays are equal. However, the function will return 
+'❌❌❌ Assertion Failed:' if both arrays are not equal. 
+*/
 
+const eqArrays = require('./eqArrays');
 const assertArraysEqual = function (array1, array2) {
   if (eqArrays(array1, array2) === true) {
     console.log(`✅✅✅ Assertion Passed: ${array1} === ${array2}`);
@@ -17,4 +12,4 @@ const assertArraysEqual = function (array1, array2) {
   }
 };
 
-console.log(assertArraysEqual([3, 2, 1], [3, 2, 1]));
+module.exports = assertArraysEqual;
