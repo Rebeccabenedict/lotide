@@ -1,21 +1,17 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`❌❌❌ Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+// The reason why the function below is used is because we want it to return the count of characters from a string.
 
 const countLetters = function(phrase) {
-  const counter = {}
+  const count = {}
   for(let i of phrase) {
       let characters = phrase[i];
-      if (counter[i]){
-          counter[i] += 1;
+      if (count[i]){
+          count[i] += 1;
       }
       else {
-          counter[i] = 1;
+          count[i] = 1;
       }
   }
-  return counter;
+  return count;
 };
+
+module.exports = countLetters;
