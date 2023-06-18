@@ -1,3 +1,7 @@
+/* The reason why the function below is used is because we want it to return an updated array with the function inputted 
+in the parameter 'callback'.
+*/
+
 const map = function(array, callback) {
   const outcome = [];
   for(let i of array) {
@@ -7,6 +11,4 @@ const map = function(array, callback) {
 
 }
 
-const words = ["ground", "control", "to", "major", "tom"];
-const results1 = map(words, word => word[0]);
-console.log(results1);
+module.exports = map;
